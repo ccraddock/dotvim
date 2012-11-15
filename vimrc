@@ -181,7 +181,7 @@ set autoindent  smartindent
 inoremap # X#
 
 " Global by default
-set gdefault
+" set gdefault
 
 " Better Search
 set hlsearch
@@ -245,8 +245,8 @@ set tabstop=8
 "nnoremap <leader>l :Tlist<CR>
 
 " Tagbar
-let g:tagbar_usearrows = 1
-nnoremap <leader>l :TagbarToggle<CR>
+"let g:tagbar_usearrows = 1
+"nnoremap <leader>l :TagbarToggle<CR>
 
 " GUI Tab settings
 function! GuiTabLabel()
@@ -394,7 +394,7 @@ set guifont=Courier\ New:h16
 "
 " Added some stuff for cool latex support
 let g:LatexBox_latexmk_options = "-pvc -pdfps"
-#set filetype on
+"set filetype on
 au FileType * exec("setlocal dictionary+=".$HOME."/.vim/dictionaries/".expand('<amatch>'))
 set complete+=k
 
